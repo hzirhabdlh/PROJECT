@@ -1,0 +1,23 @@
+print("What would you like to do?")
+print("1.Sum between 2 numbers")
+print("2.Subtract between 2 numbers")
+
+
+while True:
+    # Take input from the user
+    option = input("Enter option(1/2): ")
+
+    # Check if option is one of the two options
+    if option in ('1', '2'):
+        num1 = int(input("Enter first number: "))
+        num2 = int(input("Enter second number: "))
+
+        if option == '1':
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif option == '2':
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        break
+    else:
+        print("Invalid Input")
